@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<body style="padding: 0px;margin:0px;background: url(images/proj2.jpg) no-repeat ;">
+	{% include header.html %}
+ 	<div style="" class="lg:flex lg:flex-col sm:p-5 sm:ml-20 lg:p-20 lg:ml-40">
+		<div class="text-2xl sm:text-3xl lg:text-5xl pl-10 ml-10 mt-5">
+			Latest Projects
+		</div><hr style="margin-right: 25%">
+		{% for proj in site.projects %}
+			<div style="" class="block mb-10 mt-10 lg:flex lg:flex-row w-full pl-10 ml-10">
+				<div class="block w-1/2 lg:w-1/3">
+					<img src="{{ proj.image }}" height="200">
+				</div>
+				<div style="text-align: left;" class="block w-1/2 lg:w-1/3 mt-5 p-5">
+					<div>
+						<p>{{ proj.name }}</p>
+					</div>
+					<div>
+						<p>{{ proj.desc }}</p>
+					</div>
+				</div>
+			</div><hr style="margin-right: 25%">
+		{% endfor %}
+	</div>
