@@ -5,7 +5,8 @@ fields:
 - name: resume
   type: blocks
   label: resume
-  template_types: []
+  template_types:
+  - resume
   config:
     min: 
     max: 
