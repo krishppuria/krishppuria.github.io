@@ -74,3 +74,27 @@ fields:
     max: 
     labelField: 
   label: Skills_category
+- name: work_exp
+  type: field_group
+  config: {}
+  fields:
+  - name: experience
+    type: field_group
+    config: {}
+    fields:
+    - name: company
+      type: text
+      config:
+        required: false
+      label: Company
+    - name: description
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Description
+    label: Experience
+  label: Work_exp
