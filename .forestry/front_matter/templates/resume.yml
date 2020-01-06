@@ -22,16 +22,6 @@ fields:
     config:
       required: false
     label: Designation
-  - name: contact
-    type: number
-    label: Contact
-    description: ''
-    default: 0
-    required: true
-    config:
-      min: 
-      max: 
-      step: 
   - name: location
     type: text
     config:
@@ -42,6 +32,11 @@ fields:
     config:
       required: false
     label: Email
+  - name: contact
+    type: text
+    config:
+      required: false
+    label: Contact
   label: User_details
 - name: skills_category
   type: field_group_list
