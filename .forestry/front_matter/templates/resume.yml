@@ -2,36 +2,39 @@
 label: resume
 hide_body: false
 fields:
-- name: skills
-  type: field_group
-  config: {}
+- name: skills_category
+  type: field_group_list
   fields:
-  - name: heading
-    type: text
-    config:
-      required: false
-    label: Heading
-  - name: rating
-    type: field_group_list
+  - name: skill
+    type: field_group
+    config: {}
     fields:
-    - name: name
+    - name: heading
       type: text
       config:
         required: false
-      label: Name
-    - name: numbering
-      type: number
-      label: numbering
-      description: ''
-      default: 0
-      required: true
+      label: Heading
+    - name: rating
+      type: field_group_list
+      fields:
+      - name: name
+        type: text
+        config:
+          required: false
+        label: Name
+      - name: numbering
+        type: text
+        config:
+          required: false
+        label: numbering
       config:
         min: 
         max: 
-        step: 
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: rating
-  label: Skills
+        labelField: 
+      label: rating
+    label: skill
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Skills_category
