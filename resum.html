@@ -20,9 +20,9 @@ resume:
       heading: Languages
       rating:
       - name: English
-        numbering: '70'
+        numbering: 70%
       - name: Hindi
-        numbering: '80'
+        numbering: 80%
 
 ---
 <style >html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
@@ -59,7 +59,7 @@ resume:
 
                     <p class="pb-4">{{ rat.name }}</p>
                     <div class="w3-light-grey w3-round-xlarge w3-small">
-                      <div class="w3-round-xlarge w3-teal" style="height:24px;width:{{ rat.numbering }}"></div>
+                      <div class="w3-round-xlarge w3-teal" style="height:24px;width:{{ rat.numbering }}">{{ rat.numbering }}</div>
                     </div>
                     {% endfor %}
             {% endfor %}
