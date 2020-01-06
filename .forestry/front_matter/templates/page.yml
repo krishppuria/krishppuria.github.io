@@ -1,4 +1,11 @@
 ---
 label: page
 hide_body: false
-fields: []
+fields:
+- name: resume
+  type: blocks
+  label: resume
+  template_types: []
+  config:
+    min: 
+    max: 
