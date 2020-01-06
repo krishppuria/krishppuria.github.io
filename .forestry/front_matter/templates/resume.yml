@@ -2,6 +2,47 @@
 label: resume
 hide_body: false
 fields:
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
+  default: "/images/mypic.jpg"
+- name: user_name
+  type: text
+  config:
+    required: false
+  label: User Name
+- name: user_details
+  type: field_group
+  config: {}
+  fields:
+  - name: designation
+    type: text
+    config:
+      required: false
+    label: Designation
+  - name: location
+    type: text
+    config:
+      required: false
+    label: Location
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  - name: contact
+    type: number
+    label: Contact
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  label: User_details
 - name: skills_category
   type: field_group_list
   fields:
