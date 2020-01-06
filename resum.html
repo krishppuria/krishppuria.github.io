@@ -29,7 +29,7 @@ resume:
 </style>
 
 <body class="w3-light-grey">
-	{% include header.html %}
+	
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
   <!-- The Grid -->
@@ -51,7 +51,21 @@ resume:
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal pb-5"></i>krishna.agarwal961@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal pb-5"></i>9643421887</p>
           <hr>
+           {% for i in page.resume %}
 
+            {% for j in i.skills_category %}
+                   <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal pb-5"></i>{{ j.skill.heading }}</b></p>
+                   {% for rat in j.skill.rating %}
+
+                    <p class="pb-4">{{ rat.name }}</p>
+                    <div class="w3-light-grey w3-round-xlarge">
+                      <div class="w3-round-xlarge w3-teal" style="height:24px;width:70%"></div>
+                    </div>
+                    {% endfor %}
+            {% endfor %}
+
+            {% endfor %}
+<!--
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal pt-5 pb-6"></i>Skills</b></p>
           <p class="pb-4">Programming-C/C++/Python</p>
           <div class="w3-light-grey w3-round-xlarge w3-small ">
@@ -86,7 +100,7 @@ resume:
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
           </div>
-          <br>
+          <br>-->
         </div>
       </div><br>
 
