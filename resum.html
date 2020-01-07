@@ -32,10 +32,6 @@ resume:
     contact: '9643421887'
   work_exp:
     experience:
-    - organisation: Zenmind Studio
-      start: ''
-      end: ''
-      description: aerfgWR
     - organisation: Intern at Forsk Technologies.
       description: Worked as student intern at Forsk Techonologies in Python.
       start: '2018-11-19 18:30:00 +0000'
@@ -97,10 +93,7 @@ resume:
           <br>
           <hr class="mb-3">
             {% endfor %}
-          {% for j in i.work_exp.experience%}
-			<pre>{{ j }}</pre>
-          {% endfor %}
-            {% endfor %}
+          
 <!--
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal pt-5 pb-6"></i>Skills</b></p>
           <p class="pb-4">Programming-C/C++/Python</p>
@@ -145,20 +138,23 @@ resume:
 
     <!-- Right Column -->
     <div class="w3-twothird sm:ml-5 mb-5">
-    
+    {% for j in i.work_exp.experience%}
+			<pre>{{ j }}</pre>
+          
+            
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16 text-3xl"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
         
       
       
         <div class="w3-container">
-          <h5 class="w3-opacity pb-2"><b>Intern at Forsk Technologies.</b></h5>
-          <h6 class="w3-text-teal pb-2"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Worked as student intern at Forsk Techonologies in Python.</p>
+          <h5 class="w3-opacity pb-2"><b>{{ j.organisation }}</b></h5>
+          <h6 class="w3-text-teal pb-2"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{ j.start}} - <span class="w3-tag w3-teal w3-round">{{ j.end }}</span></h6>
+          <p>{{ j.decription }}</p>
         </div><br>
         
       </div>
-
+	{% endfor %}
       <div class="w3-container w3-card w3-white ">
         <h2 class="w3-text-grey w3-padding-16 text-3xl"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal "></i>Education</h2>
         <div class="w3-container">
@@ -179,7 +175,7 @@ resume:
           <p class="pb-2">Secondary Education-CBSE</p><br>
         </div>
       </div>
-
+{% endfor %}
     <!-- End Right Column -->
     </div>
   </div>
