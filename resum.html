@@ -93,7 +93,7 @@ resume:
           <br>
           <hr class="mb-3">
             {% endfor %}
-			
+			<pre>{{ i.work_exp }}</pre>
             {% endfor %}
 <!--
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal pt-5 pb-6"></i>Skills</b></p>
@@ -142,9 +142,9 @@ resume:
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16 text-3xl"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        {% for j in i.work_exp %}
-      <pre>{{ i.work_exp }}</pre>
-      {% endfor %}
+        
+      
+      
         <div class="w3-container">
           <h5 class="w3-opacity pb-2"><b>Intern at Forsk Technologies.</b></h5>
           <h6 class="w3-text-teal pb-2"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
