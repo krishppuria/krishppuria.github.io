@@ -126,26 +126,21 @@ fields:
   - name: programms
     type: field_group_list
     fields:
-    - name: 10th
-      type: field_group
-      config: {}
-      fields:
-      - name: school_name
-        type: text
-        config:
-          required: false
-        label: School_name
-      - name: passing_year
-        type: text
-        config:
-          required: false
-        label: Passing year
-      - name: board
-        type: text
-        config:
-          required: false
-        label: Board
-      label: 10th
+    - name: college_name
+      type: text
+      config:
+        required: false
+      label: College name
+    - name: passing_year
+      type: text
+      config:
+        required: false
+      label: Passing year
+    - name: course
+      type: text
+      config:
+        required: false
+      label: Course
     config:
       min: 
       max: 
