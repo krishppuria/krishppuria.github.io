@@ -154,14 +154,17 @@ resume:
         
       </div>
 	{% endfor %}
+      
       <div class="w3-container w3-card w3-white ">
         <h2 class="w3-text-grey w3-padding-16 text-3xl"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal "></i>Education</h2>
+        {% for j in i.education.programms%}
         <div class="w3-container">
-          <h5 class="w3-opacity pb-1"><b>Poornima University</b></h5>
-          <h6 class="w3-text-teal pb-1"><i class="fa fa-calendar fa-fw w3-margin-right"></i>07/2016-Present</h6>
-          <p class="pb-2">Bechlor Degree</p>
+          <h5 class="w3-opacity pb-1"><b>{{ j.college_name }}</b></h5>
+          <h6 class="w3-text-teal pb-1"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{ j.passing_year }}</h6>
+          <p class="pb-2">{{ j.course }}</p>
           <hr>
         </div>
+        {% endfor %}
         <div class="w3-container">
           <h5 class="w3-opacity pt-2 pb-1"><b>Vidya Mandir Public School</b></h5>
           <h6 class="w3-text-teal pb-1"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
