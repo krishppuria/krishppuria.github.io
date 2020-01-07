@@ -86,6 +86,24 @@ fields:
       config:
         required: false
       label: Organisation
+    - name: start
+      type: datetime
+      label: Start
+      description: ''
+      config:
+        required: false
+        date_format: 
+        time_format: 
+        display_utc: false
+    - name: end
+      type: datetime
+      label: End
+      description: ''
+      config:
+        required: false
+        date_format: 
+        time_format: 
+        display_utc: false
     - name: description
       type: textarea
       default: ''
