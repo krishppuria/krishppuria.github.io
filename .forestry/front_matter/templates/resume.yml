@@ -79,14 +79,13 @@ fields:
   config: {}
   fields:
   - name: experience
-    type: field_group
-    config: {}
+    type: field_group_list
     fields:
-    - name: company
+    - name: organisation
       type: text
       config:
         required: false
-      label: Company
+      label: Organisation
     - name: description
       type: textarea
       default: ''
@@ -96,5 +95,9 @@ fields:
         schema:
           format: markdown
       label: Description
+    config:
+      min: 
+      max: 
+      labelField: 
     label: Experience
   label: Work_exp
