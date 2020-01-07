@@ -119,3 +119,36 @@ fields:
       labelField: 
     label: Experience
   label: Work_exp
+- name: education
+  type: field_group
+  config: {}
+  fields:
+  - name: programms
+    type: field_group_list
+    fields:
+    - name: 10th
+      type: field_group
+      config: {}
+      fields:
+      - name: school_name
+        type: text
+        config:
+          required: false
+        label: School_name
+      - name: passing_year
+        type: text
+        config:
+          required: false
+        label: Passing year
+      - name: board
+        type: text
+        config:
+          required: false
+        label: Board
+      label: 10th
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Programms
+  label: Education
