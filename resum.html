@@ -97,8 +97,8 @@ resume:
           <br>
           <hr class="mb-3">
             {% endfor %}
-          {% for j in i.work_exp%}
-			<pre>{{ j.experience }}</pre>
+          {% for j in i.work_exp.experience%}
+			<pre>{{ i.work_exp.experience }}</pre>
           {% endfor %}
             {% endfor %}
 <!--
