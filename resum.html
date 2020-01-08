@@ -72,7 +72,7 @@ description: ''
 
   <!-- The Grid -->
   {% for i in page.resume %}
-  {{ page.user_name }}
+  {{ page.user_details }}
   <div class="w3-row-padding">
   <div class="block sm:flex">
     <!-- Left Column -->
@@ -82,7 +82,7 @@ description: ''
         <div class="w3-display-container">
           <img src={{ page.image }} style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black text-3xl">
-            <h2>{{ i.user_name }}</h2>
+            <h2>{{ page.user_name }}</h2>
           </div>
         </div><br>
         <div class="w3-container">
