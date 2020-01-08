@@ -48,3 +48,5 @@ fields:
       labelField: 
     label: Projects_sec
   label: Projects
+pages:
+- projects.html
