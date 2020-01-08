@@ -28,3 +28,5 @@ fields:
     - type: textarea
       name: project_description
       label: project_description
+pages:
+- projects.html
