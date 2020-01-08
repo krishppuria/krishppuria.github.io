@@ -147,3 +147,5 @@ fields:
       labelField: 
     label: Programms
   label: Education
+pages:
+- resum.html
