@@ -1,0 +1,30 @@
+---
+label: proj
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: field_group
+  name: projects
+  label: projects
+  fields:
+  - type: field_group_list
+    name: projects_sec
+    label: projects_sec
+    fields:
+    - type: file
+      name: project_image
+      label: project_image
+    - type: text
+      name: project_name
+      label: project_name
+    - type: textarea
+      name: project_description
+      label: project_description
