@@ -24,17 +24,17 @@ projects:
 			Latest Projects
 		</div><hr style="margin-right: 25%">
       {{ page.projects.projects_sec }}
-		{% for proj in site.projects %}
+		{% for proj in page.projects.projects_sec %}
 			<div style="" class="block mb-10 mt-10 lg:flex lg:flex-row w-full pl-10 ml-10">
 				<div class="block w-1/2 lg:w-1/3">
-					<img src="{{ proj.image }}" height="200">
+					<img src="{{ proj.project_image }}" height="200">
 				</div>
 				<div style="text-align: left;" class="block w-1/2 lg:w-1/3 mt-5 p-5">
 					<div>
-						<p>{{ proj.name }}</p>
+						<p>{{ proj.project_name }}</p>
 					</div>
 					<div>
-						<p>{{ proj.desc }}</p>
+						<p>{{ proj.project_description }}</p>
 					</div>
 				</div>
 			</div><hr style="margin-right: 25%">
