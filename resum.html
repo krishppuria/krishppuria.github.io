@@ -50,10 +50,10 @@ resume:
 image: "/images/mypic.jpg"
 user_name: Krishna Kumar Parasrampuria
 user_details:
-  designation: ''
-  location: ''
-  email: ''
-  contact: ''
+  designation: Programmer
+  location: Jaipur
+  email: krishna.agarwal961@gmail.com
+  contact: "9643421887"
 skills_category: []
 work_exp:
   experience: []
@@ -87,7 +87,7 @@ description: ''
         </div><br>
         <div class="w3-container">
 
-          {% for det in i.user_details %}
+          {% for det in page.user_details %}
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal pb-5"></i>{{ det[1] }}</p>
           <!--<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal pb-5"></i>Jaipur, India</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal pb-5"></i>krishna.agarwal961@gmail.com</p>
