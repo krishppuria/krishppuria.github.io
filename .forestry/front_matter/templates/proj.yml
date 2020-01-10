@@ -2,29 +2,24 @@
 label: proj
 hide_body: false
 fields:
-- name: projects
-  type: field_group
-  config: {}
-  fields:
-  - name: project_name
-    type: text
-    config:
-      required: false
-    label: Project_name
-  - name: project_image
-    type: file
-    config:
-      maxSize: 250
-    label: project_image
-  - name: project_description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: project_description
-  label: Projects
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
+- name: desc
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
 pages:
 - projects.html
