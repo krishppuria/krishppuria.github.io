@@ -2,15 +2,6 @@
 label: proj
 hide_body: false
 fields:
-- type: text
-  name: layout
-  label: layout
-- type: text
-  name: title
-  label: title
-- type: text
-  name: description
-  label: description
 - type: field_group
   name: projects
   label: projects
