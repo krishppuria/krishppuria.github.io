@@ -22,4 +22,5 @@ fields:
       format: markdown
   label: Description
 pages:
+- _projects/tes.md
 - projects.html
