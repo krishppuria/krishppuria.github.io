@@ -27,4 +27,5 @@ fields:
     label: project_description
   label: Projects
 pages:
+- _projects/3.md
 - projects.html
